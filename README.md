@@ -1,11 +1,8 @@
-## credit-offline-plugin
+## PluginChangeName
 
-webpack 插件，用于配合接入离线包
+webpack 插件，用于修改静态资源名
 
 ### features
-[x] 给静态资源带上appName/appVersion 等离线包meta头
-[] 在主文档头部插入一段js，上报当前的离线包版本
-
 
 ### usages
 
@@ -14,4 +11,3 @@ webpack 插件，用于配合接入离线包
   plugins: new ChangeNamePlugin({format: name => dosomething(name)})
 }
 ```
-
