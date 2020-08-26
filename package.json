@@ -1,0 +1,37 @@
+{
+  "name": "plugin-change-name",
+  "version": "1.0.0",
+  "description": "",
+  "main": "src/index.js",
+  "publishConfig": {
+    "access": "public"
+  },
+  "scripts": {
+    "dev": "webpack --config ./demo/webpack.config.js"
+  },
+  "devDependencies": {
+    "@commitlint/config-conventional": "^8.1.0",
+    "@types/webpack": "^4.41.21",
+    "commitlint": "^8.1.0",
+    "husky": "^3.0.1",
+    "ts-jest": "^24.2.0",
+    "tslib": "^1.10.0",
+    "typescript": "^3.7.2",
+    "webpack": "^4.44.1",
+    "webpack-cli": "^4.0.0-beta.2"
+  },
+  "commitlint": {
+    "extends": [
+      "@commitlint/config-conventional"
+    ]
+  },
+  "husky": {
+    "hooks": {
+      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
+    }
+  },
+  "files": [
+    "dist/",
+    "*.md"
+  ]
+}
